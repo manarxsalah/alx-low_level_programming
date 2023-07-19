@@ -9,7 +9,7 @@ int main(void)
 {
 	char hi[] = "_putchar";
 	int i = 0;
-	
+
 	while (hi[i] != '\0')
 	{
 		_putchar(hi[i]);
