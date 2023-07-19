@@ -3,7 +3,7 @@
  * jack_bauer - prints every minute of the day.
  *
  * Return: the last digit.
- */
+*/
 void jack_bauer(void)
 {
 	int a, b, c, d;
@@ -16,10 +16,10 @@ void jack_bauer(void)
 			{
 				break;
 			}
-			for (c = 48; c < 54; c++
-					{
-					for (d = 48; d < 58; d++)
-					{
+			for (c = 48; c < 54; c++)
+			{
+				for (d = 48; d < 58; d++)
+				{
 					_putchar(a);
 					_putchar(b);
 					_putchar(':');
