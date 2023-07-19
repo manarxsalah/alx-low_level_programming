@@ -1,21 +1,20 @@
-#include <main.h>
-
+#include "main.h"
 /**
- * main - Entry point
+ * main - writes "_putchar" to stdout.
+ * @hi[]: The characters to print.
  *
- * Description: a program that prints _putchar using putchar prototype
- *
- * Result: Always 0 (SUCCESS)
-*/
-
+ * Return: Always 0 (Success).
+ */
 int main(void)
 {
-	char str[] = "_putchar";
-	int ch;
+	char hi[] = "_putchar";
+	int i = 0;
 	
-	for (ch = 0; ch < 8; ch++)
-		_putchar(str[ch]);
+	while (hi[i] != '\0')
+	{
+		_putchar(hi[i]);
+		i++;
+	}
 	_putchar('\n');
-	
 	return (0);
 }
