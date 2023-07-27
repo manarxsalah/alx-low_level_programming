@@ -3,7 +3,7 @@
 
 /**
  * rot13 - encoder rot13
- * @s: pointer to string params
+ * @s: pointer to string parameters
  *
  * Return: *s
 */
@@ -25,6 +25,6 @@ char *rot13(char *s)
 				break;
 			}
 		}
-		return (s);
 	}
+	return (s);
 }
