@@ -25,6 +25,7 @@ void rev_string(char *n)
 		*(n + i) = temp;
 	}
 }
+
 /**
  * infinite_add - add 2 numbers together
  * @n1: text representation of 1st number to add
