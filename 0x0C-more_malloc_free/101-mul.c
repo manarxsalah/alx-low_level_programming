@@ -1,4 +1,9 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+#define ERR_MSG "Error"
+
 /**
  * _puts - prints a str, followed by a new line
  * @str: ptr to the str to print
