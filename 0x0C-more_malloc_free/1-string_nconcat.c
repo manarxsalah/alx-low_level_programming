@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * string_nconcat - a function that concat two strings
  * @s1: ptr to the first str
@@ -11,18 +12,18 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
-	unsigned int i, j, s1_length, s2_length;
+	unsigned int i, j, length1, length2;
 
 	if (s1 == 0)
-		s1 = "";
+		s1 = " ";
 	if (s2 == 0)
-		s2 = "";
+		s2 = " ";
 
-	for (s1_length = 0; s1[s1_length] != '\0'; s1_length++)
+	for (length1 = 0; s1[length1] != '\0'; length1++)
 		;
-	for (s2_length = 0; s2[s2_length] != '\0'; s2_length++)
+	for (length2 = 0; s2[length2] != '\0'; length2++)
 		;
-	str = malloc(s1_length + n + 1);
+	str = malloc(length1 + n + 1);
 	if (str == 0)
 	{
 		return (NULL);
