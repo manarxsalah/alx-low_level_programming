@@ -1,4 +1,4 @@
-#include "mail.h"
+#include "main.h"
 /**
  * _puts - prints a str, followed by a new line
  * @str: ptr to the str to print
