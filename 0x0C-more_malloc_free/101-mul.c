@@ -22,17 +22,17 @@ void _puts(char *str)
 int _atoi(const char *s)
 {
 	int sign = 1;
-	unsigned long int resp = 0, num1, i;
+	unsigned long int resp = 0, firstNum, i;
 
-	for (num1 = 0; !(s[num1] >= 48 && s[num1] <= 57); num1++)
+	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
 	{
-		if (s[num1] == '-')
+		if (s[firstNum] == '-')
 		{
 			sign *= -1;
 		}
 	}
 
-	for (i = num1; s[i] >= 48 && s[i] <= 57; i++)
+	for (i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
 	{
 		resp *= 10;
 		resp += (s[i] - 48);
