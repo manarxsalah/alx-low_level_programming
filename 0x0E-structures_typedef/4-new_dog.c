@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include "dog.h"
 /**
  * _strlen - a function the gets lgth of str
@@ -40,7 +39,7 @@ char *_strcpy(char *dest, char *src)
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t dog;
+	dog_t *dog;
 
 	if (!name || age < 0 || !owner)
 		return (NULL);
