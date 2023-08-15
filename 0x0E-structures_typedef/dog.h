@@ -6,7 +6,7 @@
  * @name: dog's name
  * @age: dog's age
  * @owner: owner's name
- * Description: a struct that stores its name, age and the name of the owner
+ * Description: a struct "dog" that stores its name, age and the name of it's owner
 */
 struct dog
 {
@@ -14,6 +14,7 @@ struct dog
 	float age;
 	char *owner;
 };
+typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
