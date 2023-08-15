@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "dog.h"
 /**
  * _strlen - a function the gets lgth of str
@@ -14,12 +15,12 @@ int _strlen(const char *str)
 	return (lgth);
 }
 /**
- * _strcopy - a function that returns @dest with a cp of str from @src
+ * _strcpy - a function that returns @dest with a cp of str from @src
  * @src: str to cp
  * @dest: cp str to here
  * Return: @dest
 */
-char *_strcopy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int i;
 
@@ -63,9 +64,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	dog->name = _strcopy(dog->name, name);
+	dog->name = _strcpy(dog->name, name);
 	dog->age = age;
-	dog->owner = _strcopy(dog->owner, owner);
+	dog->owner = _strcpy(dog->owner, owner);
 
 	return (dog);
 }
