@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include "main.h"
 #include "dog.h"
 /**
  * _strlen - a function the gets lgth of str
