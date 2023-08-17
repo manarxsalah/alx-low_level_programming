@@ -2,8 +2,8 @@
 /**
  * main - simple calculator
  * @argc: no. of args
- * @argv: arg vector
- * Return: Always 0
+ * @argv: array holds values
+ * Return: 0 if succes, (98, 99, 100) if failed
 */
 int main(int argc, char **argv)
 {
