@@ -19,12 +19,12 @@ int main(int argc, char **argv)
 		pringf("Error\n");
 		return (99);
 	}
-	fun = get_op_func(argv[2]);
-	if (fun == NULL)
+	op_func = get_op_func(argv[2]);
+	if (op_func == NULL)
 	{
 		printf("Error\n");
 		return (99);
 	}
-	printf("%d\n", fun(atoi(argv[1]), atoi(argv[3])));
+	printf("%d\n", op_func(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
