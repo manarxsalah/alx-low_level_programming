@@ -6,7 +6,7 @@
 */
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_int *node = 0, *next = 0;
+	listint_t *node = 0, *next = 0;
 
 	if (head == 0 || *head == 0)
 		return (0);
