@@ -1,5 +1,21 @@
 #include "main.h"
 /**
+ * _strlen - return lgth of a str
+ * @s: the str
+ * Return: int lgth of str
+*/
+int _strlen(char *s)
+{
+	int i = 0;
+
+	if (s == 0)
+		return (0);
+
+	while (*s++)
+		++i;
+	return (i);
+}
+/**
  * append_text_to_file - appends text to a file
  * @filename: name of file to create
  * @text_content: text to write
