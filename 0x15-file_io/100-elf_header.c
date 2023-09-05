@@ -82,7 +82,7 @@ void print_osabi(Elf64_Ehdr h)
 	switch (h.e_ident[EI_OSABI])
 	{
 		case ELFOSABI_NONE:
-			printf("UNIX - System v");
+			printf("UNIX - System V");
 			break;
 		case ELFOSABI_HPUX:
 			printf("UNIX - HP-UX");
