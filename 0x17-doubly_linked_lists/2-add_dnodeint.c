@@ -1,13 +1,13 @@
 #include "lists.h"
 /**
  * add_dnodeint - adds new node to dlist
- * @head: addrs pf ptr of curr head node
+ * @head: addrs of ptr of curr head node
  * @n: int field of new node
  * Return: addrs of new node or NULL
 */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *new = malloc(sizeof(dlistin_t));
+	dlistint_t *new = malloc(sizeof(dlistint_t));
 
 	if (!head || !new)
 		return (new ? free(new), NULL : NULL);
